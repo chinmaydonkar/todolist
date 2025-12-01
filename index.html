@@ -159,7 +159,7 @@
     <script>
       let todos = [];
 
-      // Load todos from localStorage on page loads
+      // Load todos from localStorage on page load
       function loadTodos() {
         const savedTodos = localStorage.getItem("todos");
         if (savedTodos) {
@@ -250,7 +250,7 @@
         return div.innerHTML;
       }
 
-      // Allow adding todos with Enter key
+      // Allow adding todos with the Enter key
       document
         .getElementById("todo-input")
         .addEventListener("keypress", function (e) {
